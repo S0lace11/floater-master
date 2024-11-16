@@ -1,0 +1,9 @@
+{
+    "name": "tabfloater_companion",
+    "description": "TabFloater Companion Application",
+    "path": "F:\\MyProjects\\Code-with-cursor\\Floater\\companion\\run_companion.bat",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://iodcdjbgffbpfhiajmolehakbmlblofk/"
+    ]
+}
