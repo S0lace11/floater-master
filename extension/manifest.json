@@ -6,7 +6,11 @@
     "permissions": [
         "tabs",
         "nativeMessaging",
-        "storage"
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
     ],
     "background": {
         "service_worker": "js/main.js",
@@ -30,17 +34,20 @@
     "commands": {
         "float-tab": {
             "suggested_key": {
-                "default": "Ctrl+Shift+F",
-                "mac": "Command+Shift+F"
+                "default": "Alt+K",
+                "mac": "Alt+K"
             },
-            "description": "将标签页转为悬浮窗"
+            "description": "将标签页转为悬浮窗",
+            "global": true
         },
         "unfloat-tab": {
             "suggested_key": {
-                "default": "Ctrl+Shift+U",
-                "mac": "Command+Shift+U"
+                "default": "Alt+L",
+                "mac": "Alt+L"
             },
-            "description": "将悬浮窗还原为标签页"
+            "description": "将悬浮窗还原为标签页",
+            "global": true
         }
-    }
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvxmb4jW0UKmELF6xrLryDdTkGFOzwsZ1kjxlIKjmQlCqUjC4qKyIQvCxpzXVBZy0kVU0DfbQeHEVQKq/gHJcDiHqz9R0tOJeQhDR3F5IpBkx6v6I+kjHVVvO+UBqsGVlOmOKJzp1E6tHZ/xjB4IRy9l7RLlKqLvNwHoHfJ1lm2q6ij5GBTXawYEk9X/xV9N3XHGpHYE8XzLH/8Np9GKkw5f5jVzfv3vBxhK0I5x5IVQXgwYB+dlwZL/+Y/p9k7FrEWBz1HD6Zw9BHE0Stf9S95n0lZGYqDqX6Xl3qVX8Mz1F3+p8QuHBr4M9VM7KQoYIxYNIc8RAYmGh0QYA6wIDAQAB"
 } 
